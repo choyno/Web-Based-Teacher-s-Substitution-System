@@ -5,7 +5,7 @@
 	</div> <!-- #contentHeader -->	
 		
 	<div class="container">
-		<div class="grid-12">Requested by kenneth barsalote	</div	
+		<div class="grid-12">Requested by john barsalote	</div	
 	</div> <!-- .grid -->			
 </div>
 			
