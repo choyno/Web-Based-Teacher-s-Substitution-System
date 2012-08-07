@@ -29,12 +29,12 @@
 <div id="wrapper">
 	
 <div id="header">
-		<h1><img src="<?php echo base_url();?>images/logo2.png"></h1><div style="clear:both;"></div>	
+		<h1><img src="<?php echo base_url();?>images/logo2.png"></h1>
 		
 		<a href="javascript:;" id="reveal-nav">
 			<span class="reveal-bar"></span>
 			<span class="reveal-bar"></span>
 			<span class="reveal-bar"></span>
 		</a>
-	 </div> <!-- #header -->
+ </div> <!-- #header -->
 	

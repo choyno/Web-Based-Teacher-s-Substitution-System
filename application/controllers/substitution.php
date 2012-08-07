@@ -29,11 +29,6 @@ class Substitution extends CI_Controller {
 		$this -> load ->view('base/template', $data);
 	}
 
-	public function schedule(){
-
-		$data['mainContent'] ='teacherschedules';
-		$this -> load ->view('base/template', $data);
-	}
 
 	public function vouch(){
 
