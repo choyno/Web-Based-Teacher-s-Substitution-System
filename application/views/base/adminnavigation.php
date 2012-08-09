@@ -13,7 +13,7 @@
 				<a href="javascript:;">User Accounts</a>	
 				<ul class="subNav">
 					<li><a href="<?php echo base_url();?>index.php/admincontrol/user">Create User</a></li>					
-					<li><a href="<?php echo base_url();?>#">View All Users</a></li>					
+					<li><a href="<?php echo base_url();?>index.php/admincontrol/useraccount">View All Users</a></li>					
 				</ul>
 			</li>
 

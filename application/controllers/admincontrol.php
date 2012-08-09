@@ -14,6 +14,8 @@ class Admincontrol extends CI_Controller {
 		$this -> load ->view('base/admintemplate', $data);
 	}
 
+
+
 	public function request() {
 
 		$data['admincontent'] ='requestsubstitution';
@@ -50,6 +52,14 @@ class Admincontrol extends CI_Controller {
 	{
 
 		$data['admincontent'] = 'adduser';
+		$this -> load -> view ('base/admintemplate', $data);
+
+	}
+
+		public function useraccount()
+	{
+
+		$data['admincontent'] = 'viewusers';
 		$this -> load -> view ('base/admintemplate', $data);
 
 	}

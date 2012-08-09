@@ -13,7 +13,7 @@
 						<h3>User Information</h3>
 					</div>
 					<div class="widget-content">
-						<div class="field-group inlineField divfield" style="">	
+						<div class="field-group inlineField " style="float:left;">	
 							<div class="field">
 								<label for="fullname">Full Name :</label>
 								<input id="fullname" class="" type="text" size="24" name="fullname">
@@ -37,31 +37,24 @@
 								<input id="retypepassword" class="" type="text" size="24" name="retypepassword">
 							</div>
 							<br/>
-							
-
-
-
 						</div>
-						<div class="field-group inlineField" style="">	
+						<div class="field-group inlineField" style="width: 48%;float:left;">	
 							<div class="field">
 								<label for="department">Department :</label>
 								<select name="department " id="department">
-											<option>Personal</option>
-											<option>Seminar</option>
-											<option>Others</option>
+											<option>--</option>
+											<option>CCS </option>
 										</select>
 							</div>
 
 							<div class="field">
-								<label for="fname">Department :</label>
+								<label for="fname">User Type:</label>
 								<select name="reason " id="reason">
-											<option>Personal</option>
-											<option>Seminar</option>
-											<option>Others</option>
+										<option>--</option>
+											<option>Department Head</option>
+											<option>Assistant</option>
 										</select>
 							</div>
-
-
 
 						</div>
 					</div> <!-- .widget-content -->

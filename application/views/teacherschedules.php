@@ -217,11 +217,10 @@
 				        </tbody>
 			         </table>
 				</div> <!-- .widget-content -->
-				<div style="float:right;">
-					<button class="btn btn-large btn-blue">Save</button>
-				</div>
+				
 		   </div> <!-- .widget -->
-
+				<button class="btn btn-primary btn-blue">Save</button>
+		
 		</div>
 
 	</div> <!-- .grid -->			

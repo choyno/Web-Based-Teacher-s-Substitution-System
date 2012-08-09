@@ -4812,7 +4812,7 @@ body.error-page {
 .widget-table .table tr td:last-child
 , .widget-table .table tr th:last-child { border-right: none; }
 
-.widget-table table.table thead th { border-top: none; border-left: none; cursor: pointer; }
+.widget-table table.table thead th { border-top: none; border-left: none; cursor: pointer; text-align:center; }
 
 
 	
@@ -6540,10 +6540,15 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
 	h2.dashboard_title span { display: block; padding: 6px 0 0; }
 
 	}
-	.idget-content  .inlineField
+
+	.DataTables_sort_wrapper
 	{
-		width: 500px;
-		float:left;
+		text-align:center;
 
 	}
 
+	.odd:hover, .even:hover
+	{
+		background-color: #DDD;
+
+	}
