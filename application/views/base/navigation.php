@@ -12,7 +12,7 @@
 				<span class="icon-article"></span>
 				<a href="javascript:;">Request Substitution </a>	
 				<ul class="subNav">
-					<li><a href="<?php echo base_url();?>index.php/substitution/request">Teachers Substitute</a></li>					
+					<li><a href="<?php echo base_url();?>index.php/substitution/request">Substitute Teachers</a></li>					
 					<li><a href="<?php echo base_url();?>index.php/substitution/viewabsent">View All Request</a></li>					
 				</ul>
 			</li>
