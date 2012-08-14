@@ -29,8 +29,8 @@
 								<th>CCS</th>
 								<th>Assistant</th>
 								<th>
-									<a href="#">Update</a>|
-									<a href="#">Delete</a>
+									<a href="#">Edit</a>|
+									<a href="#">Deactive</a>
 								</th>
 							</tr>	
 							<tr>
@@ -41,8 +41,8 @@
 								<th>Department Head
 								</th>
 								<th>
-									<a href="#">Update</a>|
-									<a href="#">Delete</a>
+									<a href="#">Edit</a>|
+									<a href="#">Deactive</a>
 								</th>
 							</tr>
 							<tr>
@@ -53,8 +53,8 @@
 								<th>Department Head
 								</th>
 								<th>
-									<a href="#">Update</a>|
-									<a href="#">Delete</a>
+									<a href="#">Edit</a>|
+									<a href="#">Deactive</a>
 								</th>
 							</tr>
 							<tr>
@@ -65,8 +65,8 @@
 								<th>Department Head
 								</th>
 								<th>
-									<a href="#">Update</a>|
-									<a href="#">Delete</a>
+									<a href="#">Edit</a>|
+									<a href="#">Deactive</a>
 								</th>
 							</tr>
 							<tr>
@@ -77,8 +77,8 @@
 								<th>Department Head
 								</th>
 								<th>
-									<a href="#">Update</a>|
-									<a href="#">Delete</a>
+									<a href="#">Edit</a>|
+									<a href="#">Deactive</a>
 								</th>
 							</tr>			
 				        </tbody>

@@ -32,11 +32,7 @@
 							</div>
 							<br/>
 
-							<div class="field">
-								<label for="retypepassword">Retype Password :</label>
-								<input id="retypepassword" class="" type="text" size="24" name="retypepassword">
-							</div>
-							<br/>
+						
 						</div>
 						<div class="field-group inlineField" style="width: 48%;float:left;">	
 							<div class="field">
@@ -48,11 +44,11 @@
 							</div>
 
 							<div class="field">
-								<label for="fname">User Type:</label>
+								<label for="fname">User Type :</label>
 								<select name="reason " id="reason">
 										<option>--</option>
 											<option>Department Head</option>
-											<option>Assistant</option>
+											<option>Checker</option>
 										</select>
 							</div>
 
