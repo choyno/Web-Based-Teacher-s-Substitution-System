@@ -19,7 +19,7 @@
 									
 										<label for="unplanned" style="float:right;text-align:left">Unplanned </label>
 										<input type="radio" name="unplanned" id="Requesttype" value="Unplanned" />
-									
+
 									<br/>
 									
 										<label for="planned" style="float:right;text-align:left">Planned </label>
@@ -27,6 +27,12 @@
 									
 							</div>
 							<br/>
+							<div class="field">
+								<label for="dateabsent">Date Absent  :</label>
+								<input id="dateabsent" class="" type="text" size="24" name="dateabsent" value="8/13/12">
+							</div>
+							<br/>
+
 							<div class="field">
 								<label for="fullname">Absent Name :</label>
 								<input id="fullname" class="" type="text" size="24" name="fullname">
@@ -48,7 +54,13 @@
 								</div>
 							<br/>
 
-							<div class="field">
+							
+						
+						</div>
+						<div class="field-group inlineField" style="width: 48%;float:left;">	
+							
+
+						<div class="field">
 								<label for="password">Absent Subject :</label>
 								<select id="cardtype" name="cardtype" style="opacity: 0;">
 										<option>ICN23 Room 305	IT703 1:00 2:00 TTH</option>
@@ -57,25 +69,12 @@
 							</div>
 							<br/>
 
-						
-						</div>
-						<div class="field-group inlineField" style="width: 48%;float:left;">	
-							<div class="field">
-								<label for="department">Department :</label>
-								<select name="department " id="department">
-											<option>--</option>
-											<option>CCS </option>
-										</select>
-							</div>
 
 							<div class="field">
-								<label for="fname">User Type:</label>
-								<select name="reason " id="reason">
-										<option>--</option>
-											<option>Department Head</option>
-											<option>Checker</option>
-										</select>
-							</div>
+								<label for="assignedby">Assigned by :</label>
+								<input  id="assignedby" class="" type="text" size="24" name="assignedby" value="user loggin">
+								</div>
+							<br/>
 
 						</div>
 

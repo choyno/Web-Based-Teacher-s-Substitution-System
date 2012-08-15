@@ -21,29 +21,7 @@
 				<span class="icon-list"></span>
 				<a href="<?php echo base_url();?>index.php/admincontrol/schedule">Teacher's Schedule</a>	
 			</li>
-			<li id="navForms" class="nav">
-				<span class="icon-article"></span>
-				<a href="javascript:;">Request Substitution </a>	
-				<ul class="subNav">
-					<li><a href="<?php echo base_url();?>index.php/admincontrol/request">Teachers Substitute</a></li>					
-					<li><a href="<?php echo base_url();?>index.php/admincontrol/viewabsent">View All Request</a></li>					
-				</ul>
-			</li>
-		
-
-			<li id="navpages" class="nav">
-				<span class="icon-document-alt-stroke"></span>
-				<a href="<?php echo base_url();?>index.php/admincontrol/vouch">Vouch Teacher's </a>	
-								
-			</li>
-
-			<li id="navpages" class="nav">
-				<span class="icon-document-alt-stroke"></span>
-				<a href="<?php echo base_url();?>index.php/admincontrol/remind">Remind Substitute</a>	
-								
-			</li>
 			
-
 			<li id="navType" class="nav">
 				<span class="icon-info"></span>
 				<a href="javascript:;">Teacher's Records</a>	

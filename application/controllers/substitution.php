@@ -20,38 +20,45 @@ class Substitution extends CI_Controller {
 	public function index() {
 
 		$data['mainContent'] ='dashboard';
-		$this -> load ->view('base/template', $data);
+		$this -> load ->view('base/heads/template', $data);
 	}
 
 	public function request() {
 
 		$data['mainContent'] ='requestsubstitution';
-		$this -> load ->view('base/template', $data);
+		$this -> load ->view('base/heads/template', $data);
 	}
+
+	public function viewrequest() {
+
+		$data['mainContent'] ='viewrequest';
+		$this -> load ->view('base/heads/template', $data);
+	}
+
 
 
 	public function vouch(){
 
 		$data['mainContent'] ='vouchteachers';
-		$this -> load ->view('base/template', $data);
+		$this -> load ->view('base/heads/template', $data);
 	}
 
 	public function remind(){
 
 		$data['mainContent'] ='remindsubteachers';
-		$this -> load ->view('base/template', $data);
+		$this -> load ->view('base/heads/template', $data);
 	}
 
 	public function viewabsent(){
 
 		$data['mainContent'] ='viewabsentteacher';
-		$this -> load ->view('base/template', $data);
+		$this -> load ->view('base/heads/template', $data);
 	}
 
 	public function viewsubstitute(){
 
 		$data['mainContent'] ='viewsubstituteteacher';
-		$this -> load ->view('base/template', $data);
+		$this -> load ->view('base/heads/template', $data);
 	}
 }
 

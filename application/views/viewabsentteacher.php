@@ -1,6 +1,6 @@
 <div id="content">		
 	<div id="contentHeader">
-		<h1>Absent Teacher's</h1>
+		<h1>Teachers Request</h1>
 	</div> <!-- #contentHeader -->	
 	<div class="container">
 		<div class="grid-24">
@@ -9,7 +9,7 @@
 					
 						<div class="widget-header">
 							<span class="icon-list"></span>
-							<h3 class="icon chart">Data Table Plugin</h3>		
+							<h3 class="icon chart">All Teacher Records</h3>		
 						</div>
 					
 						<div class="widget-content">
@@ -34,7 +34,7 @@
 								<th>1:00 -2:00</th>
 								<th>MWF</th>
 							</tr>
-	<tr>
+							<tr>
 								<th>John  B Sable</th>
 								<th>ICN 23</th>
 								<th>Room 305</th>
