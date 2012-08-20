@@ -43,7 +43,9 @@
 								<label for="username">Reason :</label>
 								<select id="cardtype" name="cardtype" style="opacity: 0;">
 									<option>Sick Absent</option>
+									<option>Personal</option>
 									<option>Attending school Activity</option>
+
 								</select>
 							</div>
 

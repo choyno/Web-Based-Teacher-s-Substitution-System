@@ -17,17 +17,20 @@
 				</ul>
 			</li>
 
-			<li id="navpages" class="nav">
-				<span class="icon-document-alt-stroke"></span>
-				<a href="<?php echo base_url();?>index.php/substitution/vouch">Vouch Teacher's </a>	
-								
-			</li>
-
-			<li id="navpages" class="nav">
+			<!--RESERVED -->
+			<li id="navpages" class="nav" style=" display:none;">
 				<span class="icon-document-alt-stroke"></span>
 				<a href="<?php echo base_url();?>index.php/substitution/remind">Remind Substitute</a>	
 								
 			</li>
+
+			<li id="navpages" class="nav" style=" display:none;">
+				<span class="icon-document-alt-stroke"></span>
+				<a href="<?php echo base_url();?>index.php/substitution/vouch">Vouch Teacher's </a>	
+								
+			</li>
+			<!--RESERVED -->
+		
 			
 
 			<li id="navType" class="nav">
