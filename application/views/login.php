@@ -30,8 +30,8 @@
 	<div class=""  style="float:left">
 		<div id="login_panel">
 		<?php echo validation_errors();?>
-		<?php echo form_open('login/uservalidation');?>
-		<form action="<?php echo base_url();?>index.php/substitution" method="post" accept-charset="utf-8">		
+		<?php echo form_open('login/validation');?>
+			
 			<div class="login_fields">
 				<div class="field">
 					<label for="email">Username</label>
@@ -47,7 +47,7 @@
 			<div class="login_actions">
 				<button type="submit" class="btn btn-primary" tabindex="3">Login</button>
 			</div>
-		<form echo form_close(); ?>
+		<?php echo form_close(); ?>
 		</div> <!-- #login_panel -->		
 
 	</div>

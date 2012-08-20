@@ -26,7 +26,28 @@ class Login extends CI_Controller {
 		$this->load->view('login');
 	}
 
-	
+	public function validation(){
+
+		$this -> load -> model('login_model');
+		$query = $this -> login_model -> validate();
+
+		if($query)
+		{
+			$data = array(
+				'username' => $this -> input ->post('username'),
+				'is_logged_in' => true
+				);
+
+			$this -> session -> set_userdata($data);
+			redirect('admincontrol/index');
+
+		}
+		else
+		{
+			$this-> index();
+
+		}
+	}
 }
 
 
