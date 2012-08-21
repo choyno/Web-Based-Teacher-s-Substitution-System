@@ -19,6 +19,7 @@ class Login extends CI_Controller {
 	 */
 
 
+	
 
 	public function index()
 	{
@@ -28,8 +29,9 @@ class Login extends CI_Controller {
 
 	public function validation(){
 
-		$this -> load -> model('login_model');
-		$query = $this -> login_model -> validate();
+		$this -> load ->model('user');
+		$query = $this -> user -> validate();
+		
 
 		if($query)
 		{
