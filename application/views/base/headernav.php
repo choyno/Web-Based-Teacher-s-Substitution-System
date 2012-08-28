@@ -10,7 +10,10 @@
 		 <ul>
 		 	<li>
 		 		
-		 	<li><a href="<?php echo base_url();?>/index.php">Logout</a></li>
+		 	<li><a href="<?php echo base_url();?>index.php/login/logout">Logout</a>
+
+
+		 	</li>
 		 </ul>
 	</div> <!-- #topNav -->
 	

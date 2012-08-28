@@ -2,36 +2,23 @@
 
 class Admincontrol extends CI_Controller {
 
-	public function index() {
+
+	public function  __construct()
+	{
+		parent::__construct();
+		$this -> is_logged_in();
+
+	}
+
+	public function index(){
 
 		$data['admincontent'] = 'dashboard';
 		$this -> load ->view('base/admin/template', $data);
 	}
 
-		public function schedule(){
+	public function schedule(){
 
 		$data['admincontent'] ='teacherschedules';
-		$this -> load ->view('base/admin/template', $data);
-	}
-
-
-
-	public function request() {
-
-		$data['admincontent'] ='requestsubstitution';
-		$this -> load ->view('base/admin/template', $data);
-	}
-
-
-	public function vouch(){
-
-		$data['admincontent'] ='vouchteachers';
-		$this -> load ->view('base/admin/template', $data);
-	}
-
-	public function remind(){
-
-		$data['admincontent'] ='remindsubteachers';
 		$this -> load ->view('base/admin/template', $data);
 	}
 
@@ -56,7 +43,7 @@ class Admincontrol extends CI_Controller {
 
 	}
 
-		public function useraccount()
+	public function useraccount()
 	{
 
 		$data['admincontent'] = 'viewusers';
@@ -64,4 +51,16 @@ class Admincontrol extends CI_Controller {
 
 	}
 
+
+	public function is_logged_in()
+	{
+		$is_logged_in = $this -> session -> userdata('is_logged_in');
+
+		if(!isset($is_logged_in) || $is_logged_in != TRUE)
+		{
+			redirect('login/index');
+			die();
+
+		}
+	}
 }

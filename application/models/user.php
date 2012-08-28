@@ -12,5 +12,6 @@ class User extends CI_Model
 		{
 			return true;
 
-			}
+		}
+	}
 }

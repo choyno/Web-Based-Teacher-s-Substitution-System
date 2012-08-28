@@ -13,24 +13,21 @@
 				<a href="javascript:;">Request Substitution </a>	
 				<ul class="subNav">
 					<li><a href="<?php echo base_url();?>index.php/substitution/request">Teachers Substitution</a></li>					
-					<li><a href="<?php echo base_url();?>index.php/substitution/viewrequest">View All Request</a></li>					
+					<li><a href="<?php echo base_url();?>index.php/substitution/viewrequesr">View All Request</a></li>					
 				</ul>
 			</li>
 
-			<!--RESERVED -->
-			<li id="navpages" class="nav" style=" display:none;">
-				<span class="icon-document-alt-stroke"></span>
-				<a href="<?php echo base_url();?>index.php/substitution/remind">Remind Substitute</a>	
-								
-			</li>
-
-			<li id="navpages" class="nav" style=" display:none;">
+			<li id="navpages" class="nav">
 				<span class="icon-document-alt-stroke"></span>
 				<a href="<?php echo base_url();?>index.php/substitution/vouch">Vouch Teacher's </a>	
 								
 			</li>
-			<!--RESERVED -->
-		
+
+			<li id="navpages" class="nav">
+				<span class="icon-document-alt-stroke"></span>
+				<a href="<?php echo base_url();?>index.php/substitution/remind">Remind Substitute</a>	
+								
+			</li>
 			
 
 			<li id="navType" class="nav">

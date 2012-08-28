@@ -12,6 +12,7 @@
 	<meta name="author" content="" />		
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<!-- CSS -->
+	<link rel="stylesheet" href="<?php echo base_url();?>stylesheets/all.css" type="text/css" />
 	<link rel="stylesheet" href="<?php echo base_url()?>/stylesheets/reset.css" type="text/css" media="screen" title="no title" />
 	<link rel="stylesheet" href="<?php echo base_url()?>/stylesheets/text.css" type="text/css" media="screen" title="no title" />
 	<link rel="stylesheet" href="<?php echo base_url()?>/stylesheets/buttons.css" type="text/css" media="screen" title="no title" />
@@ -26,16 +27,30 @@
 	<div class=""  style="float:left">
 		<h1>Dashboard</h1>
 	</div>
+	
+	
+
 
 	<div class=""  style="float:left">
 		<div id="login_panel">
-		<?php echo validation_errors();?>
+		<div class="notify notify-error">
+			<a class="close" href="javascript:;">×</a>
+			<h3>Warning Notifty</h3>
+			<p><?php echo validation_errors();?>
+			<?php if ($this ->session-> flashdata('message')): ?>
+				<p><?php echo $this ->session -> flashdata('message') ?></p>
+			<?php endif; ?>
+			</p>			
+		</div>
+	
+
 		<?php echo form_open('login/validation');?>
 			
 			<div class="login_fields">
 				<div class="field">
-					<label for="email">Username</label>
-					<input type="text" name="email" value="" id="email" tabindex="1" placeholder="email@example.com" />		
+					<label for="username">Username</label>
+					<input type="text"  name="username" value="" id="username" tabindex="1" placeholder="email@example.com" />		
+				
 				</div>
 				 
 				<div class="field">
