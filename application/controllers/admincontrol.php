@@ -1,4 +1,4 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+	<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Admincontrol extends CI_Controller {
 
@@ -6,8 +6,13 @@ class Admincontrol extends CI_Controller {
 	public function  __construct()
 	{
 		parent::__construct();
-		$this -> is_logged_in();
+		$this -> is_logged_in_admin();
 
+		//calling the model user for the clearing of cache
+		$this -> load-> model('user');
+		//calling the protect_acct fucntion into the user model
+		$this->user->protect_acct();
+		
 	}
 
 	public function index(){
@@ -52,13 +57,13 @@ class Admincontrol extends CI_Controller {
 	}
 
 
-	public function is_logged_in()
+	public function is_logged_in_admin()
 	{
-		$is_logged_in = $this -> session -> userdata('is_logged_in');
+		$is_logged_in_admin = $this -> session -> userdata('is_logged_in_admin');
 
-		if(!isset($is_logged_in) || $is_logged_in != TRUE)
+		if(!isset($is_logged_in_admin) || $is_logged_in_admin != TRUE)
 		{
-			redirect('login/index');
+			redirect('account/login');
 			die();
 
 		}

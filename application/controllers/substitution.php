@@ -17,6 +17,21 @@ class Substitution extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
+	
+
+	//create constructor
+	public function  __construct()
+	{
+
+		parent::__construct();
+		$this -> is_logged_in_head();
+
+		//calling the model user for the clearing of cache
+		$this -> load-> model('user');
+		//calling the protect_acct fucntion into the user model
+		$this->user->protect_acct();
+		
+	}
 	public function index() {
 
 		$data['mainContent'] ='dashboard';
@@ -59,6 +74,21 @@ class Substitution extends CI_Controller {
 
 		$data['mainContent'] ='viewsubstituteteacher';
 		$this -> load ->view('base/heads/template', $data);
+	}
+
+
+
+	//checking is the user is login if not direct to login page..
+	public function is_logged_in_head()
+	{
+		$is_logged_in_head = $this -> session -> userdata('is_logged_in_head');
+
+		if(!isset($is_logged_in_head) || $is_logged_in_head != TRUE)
+		{
+			redirect('account/login');
+			die();
+
+		}
 	}
 }
 
