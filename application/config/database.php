@@ -50,7 +50,7 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'admin';
-$db['default']['password'] = 'password';
+$db['default']['password'] = 'substitutionsystem';
 $db['default']['database'] = 'webbasedteachersubstitution';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
