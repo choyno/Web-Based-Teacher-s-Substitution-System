@@ -28,23 +28,17 @@
 		<h1>Dashboard</h1>
 	</div>
 	
-	
-
 
 	<div class=""  style="float:left">
 		<div id="login_panel">
-		<div class="notify notify-error">
-			<a class="close" href="javascript:;">×</a>
-			<h3>Warning Notifty</h3>
-			<p><?php echo validation_errors();?>
-			<?php if ($this ->session-> flashdata('message')): ?>
-				<p><?php echo $this ->session -> flashdata('message') ?></p>
-			<?php endif; ?>
-			</p>			
-		</div>
-	
+			<?php if (validation_errors()):?>
+				<div class="notify notify-error">
+					<a class="close" href="javascript:;">×</a>
+					<p><?php echo validation_errors();?></p>			
+				</div>
+			<?php endif;?>
 
-		<?php echo form_open('login/validation');?>
+		<?php echo form_open('account/login');?>
 			
 			<div class="login_fields">
 				<div class="field">
