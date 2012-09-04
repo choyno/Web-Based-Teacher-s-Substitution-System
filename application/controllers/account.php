@@ -26,50 +26,23 @@ class Account extends CI_Controller
 		
 		//Get the entered password from post			
 		$password = md5($this->input->post('password'));
+		
 		//Salt the entered password and return the salted password	$salted = $this->_salt_password($username,$password);
 		
 		
 		//Attempt to login the user using the username and salted password						
-		$user = $this->user->login_user($username,$password);
-		
+		$user = $this->user->login_user($username,$password );
 		//Check if the user was found
 		if ($user)
 		{
 			//If the user was found then set the session id variable to the user id
-			
 				$data = array(
 					'username' => $this -> input ->post('username'),
 					'is_logged_in_admin' => true,
 					'id'=> $user-> id
 					);
 				$this -> session -> set_userdata($data);
-			
 		}
-
-		// else if($user1)
-		// 	{
-		// 	//If the user was found then set the session id variable to the user id
-		// 		$data = array(
-		// 			'username' => $this -> input ->post('username'),
-		// 			'is_logged_head_in' => true,
-		// 			'is_logged_admin_in' => false,
-		// 			'is_logged_checker_in' => false,
-		// 			'id'=> $user1-> id
-		// 			);
-		// 		$this -> session -> set_userdata($data);
-		// }
-		// else if($user2)
-		// 	{
-		// 	//If the user was found then set the session id variable to the user id
-		// 		$data = array(
-		// 			'username' => $this -> input ->post('username'),
-		// 			'is_logged_checker_in' => true,
-		// 			'is_logged_head_in' => false,
-		// 			'is_logged_admin_in' => false,
-		// 			'id'=> $user2-> id
-		// 			);
-		// 		$this -> session -> set_userdata($data);
-		// }
 		else
 		{
 			//The user was not found so set a message to this effect

@@ -19,32 +19,16 @@ class User extends CI_Model {
 	//protect account for back button to cache
 	public function protect_acct() 
 	{
-	    $is_logged_in_admin = $this->session->userdata('is_logged_in_admin');
-	        if($is_logged_in_admin != TRUE) {
+	    $is_logged_in = $this->session->userdata('is_logged_in_admin');
+	        if($is_logged_in != TRUE) {
 	            redirect(base_url(), 'refresh');    
 	 	} 
 	}
 
-
 	function login_user($username,$password)
 	{		
 		//Checking the user if its on the database
-		$query = $this->db->get_where('users',array('username'=>$username,'password'=>$password,'status'=>'1', 'user_types_id' =>'1') );
+		$query = $this->db->get_where('users',array('username'=>$username,'password'=>$password,'status'=>'1'));
 		return $query->row();
-
 	}
-
-	
-	// function login_head($username,$password)
-	// {		
-	// 	//Checking the user if its on the database
-	// 	$query2 = $this->db->get_where('users',array('username'=>$username,'password'=>$password,'status'=>'1', 'user_types_id' =>'2') );
-	// 	return $query2->row();
-	// }
-	// function login_checker($username,$password)
-	// {		
-	// 	//Checking the user if its on the database
-	// 	$query3 = $this->db->get_where('users',array('username'=>$username,'password'=>$password,'status'=>'1', 'user_types_id' =>'3') );
-	// 	return $query3->row();
-	// }
 }

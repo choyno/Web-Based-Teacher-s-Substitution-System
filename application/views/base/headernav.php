@@ -10,7 +10,7 @@
 		 <ul>
 		 	<li>
 		 		
-		 	<li><a href="<?php echo base_url();?>index.php/login/logout">Logout</a>
+		 	<li><a href="<?php echo base_url();?>index.php/account/logout">Logout</a>
 
 
 		 	</li>

@@ -10,16 +10,10 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		if( $this -> session -> userdata('is_logged_in_admin') == TRUE)
+		if( $this -> session -> userdata('is_logged_in_admin'))
 		{
 			redirect('admincontrol');
 		}
-		if( $this -> session -> userdata('is_logged_in_head') == TRUE)
-		{
-			redirect('admincontrol');
-		}
-		
-		
 		else
 		{
 			$this -> session -> sess_destroy();
