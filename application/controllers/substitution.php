@@ -79,6 +79,7 @@ class Substitution extends CI_Controller {
 
 
 	//checking is the user is login if not direct to login page..
+	
 	public function is_logged_in_head()
 	{
 		$is_logged_in_head = $this -> session -> userdata('is_logged_in_head');

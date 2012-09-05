@@ -1,6 +1,6 @@
 <div id="content">		
 	<div id="contentHeader">
-		<h1>Substitute Teacher's </h1>
+		<h1>Substitution Teacher's Records </h1>
 	</div> <!-- #contentHeader -->	
 	<div class="container">
 		<div class="grid-24">
@@ -9,56 +9,32 @@
 					
 						<div class="widget-header">
 							<span class="icon-list"></span>
-							<h3 class="icon chart">Data Table Plugin</h3>		
+							<h3 class="icon chart">Teacher's Request</h3>		
 						</div>
 					
 						<div class="widget-content">
-							
 							<table class="table table-bordered table-striped data-table">
 						<thead>
 							<tr>
-								<th>Teacher</th>
-								<th>Subject Code</th>
-								<th>Room #</th>
-								<th>Section</th>
+								<th>Date Request</th>
+								<th>Absent Teacher</th>
+								<th>Substitutute Teacher</th>
 								<th>Time</th>
-								<th>Schedule</th>
+								<th>Subject</th>
+								<th>Reason</th>
+								<th>Assigned By</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<th>Kenneth B Barsalote</th>
-								<th>ICN 22</th>
-								<th>Room 302</th>
-								<th>IT704</th>
+								<th>8/12/12</th>
+								<th>Salanatin, Edwin C.</th>
+								<th>Abayon, Mark Jil C.</th>
 								<th>1:00 -2:00</th>
-								<th>MWF</th>
-							</tr>
-	<tr>
-								<th>John  B Sable</th>
-								<th>ICN 23</th>
-								<th>Room 305</th>
-								<th>IT703</th>
-								<th>2:00 -3:00</th>
-								<th>TTH</th>
-							</tr>
-							<tr>
-								<th>Kenneth B Barsalote</th>
-								<th>ICN 22</th>
-								<th>Room 302</th>
-								<th>IT704</th>
-								<th>1:00 -2:00</th>
-								<th>MWF</th>
-							</tr>
-	<tr>
-								<th>John  B Sable</th>
-								<th>ICN 23</th>
-								<th>Room 305</th>
-								<th>IT703</th>
-								<th>2:00 -3:00</th>
-								<th>TTH</th>
-							</tr>
-																				
+								<th>Computer Programming I: Programming Fundamentals</th>
+								<th>Sick Absent</th>
+								<th>Smarivic</th>
+							</tr>										
 						</tbody>
 					</table>
 						</div> <!-- .widget-content -->

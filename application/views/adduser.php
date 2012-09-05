@@ -52,6 +52,15 @@
 										</select>
 							</div>
 
+							<div class="field">
+								<label for="fname">Status :</label>
+								<select name="reason " id="reason">
+										<option>--</option>
+											<option>Active</option>
+											<option>Inactive</option>
+										</select>
+							</div>
+
 						</div>
 					</div> <!-- .widget-content -->
 				</div> <!-- .widget -->

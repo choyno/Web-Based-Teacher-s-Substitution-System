@@ -1,20 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 3.4.10.1
+-- version 2.11.0
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 02, 2012 at 02:52 AM
--- Server version: 5.5.20
--- PHP Version: 5.3.10
+-- Generation Time: Sep 05, 2012 at 02:00 PM
+-- Server version: 5.0.45
+-- PHP Version: 5.2.4
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
 
 --
 -- Database: `webbasedteachersubstitution`
@@ -23,13 +16,30 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `day_codes`
+--
+
+CREATE TABLE `day_codes` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(20) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `day_codes`
+--
+
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `departments`
 --
 
-CREATE TABLE IF NOT EXISTS `departments` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `departments` (
+  `id` int(11) NOT NULL auto_increment,
   `name` varchar(20) NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
@@ -42,16 +52,33 @@ INSERT INTO `departments` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `reasons`
+--
+
+CREATE TABLE `reasons` (
+  `id` int(11) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `reasons`
+--
+
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `sessions`
 --
 
-CREATE TABLE IF NOT EXISTS `sessions` (
-  `session_id` varchar(40) NOT NULL DEFAULT '0',
-  `ip_address` varchar(16) NOT NULL DEFAULT '0',
+CREATE TABLE `sessions` (
+  `session_id` varchar(40) NOT NULL default '0',
+  `ip_address` varchar(16) NOT NULL default '0',
   `user_agent` varchar(50) NOT NULL,
-  `last_activity` int(10) unsigned NOT NULL DEFAULT '0',
+  `last_activity` int(10) unsigned NOT NULL default '0',
   `user_data` text NOT NULL,
-  PRIMARY KEY (`session_id`)
+  PRIMARY KEY  (`session_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
@@ -65,18 +92,98 @@ INSERT INTO `sessions` (`session_id`, `ip_address`, `user_agent`, `last_activity
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `status`
+--
+
+CREATE TABLE `status` (
+  `id` int(11) NOT NULL auto_increment,
+  `name` varchar(20) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `status`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `subjects`
+--
+
+CREATE TABLE `subjects` (
+  `id` int(11) NOT NULL auto_increment,
+  `code` varchar(20) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `subjects`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `teachers`
+--
+
+CREATE TABLE `teachers` (
+  `id` int(11) NOT NULL auto_increment,
+  `firstname` varchar(20) NOT NULL,
+  `lastname` varchar(20) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `teachers`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `teachers_subjects`
+--
+
+CREATE TABLE `teachers_subjects` (
+  `id` int(11) NOT NULL auto_increment,
+  `teacher_id` int(11) NOT NULL,
+  `subject_id` int(11) NOT NULL,
+  `time_start` time NOT NULL,
+  `time_end` time NOT NULL,
+  `room_num` varchar(20) NOT NULL,
+  `day_code_id` int(11) NOT NULL,
+  `section` varchar(20) NOT NULL,
+  `type` varchar(20) NOT NULL,
+  PRIMARY KEY  (`id`),
+  KEY `teacher_id` (`teacher_id`,`subject_id`,`day_code_id`),
+  KEY `day_code_id` (`day_code_id`),
+  KEY `subject_id` (`subject_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `teachers_subjects`
+--
+
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
-CREATE TABLE IF NOT EXISTS `users` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL auto_increment,
   `fullname` varchar(20) NOT NULL,
   `status` tinyint(1) NOT NULL,
   `username` varchar(20) NOT NULL,
   `password` varchar(32) NOT NULL,
   `user_types_id` int(11) NOT NULL,
   `departments_id` int(11) NOT NULL,
-  PRIMARY KEY (`id`),
+  PRIMARY KEY  (`id`),
   KEY `user_types_id` (`user_types_id`),
   KEY `departments_id` (`departments_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
@@ -94,10 +201,10 @@ INSERT INTO `users` (`id`, `fullname`, `status`, `username`, `password`, `user_t
 -- Table structure for table `user_types`
 --
 
-CREATE TABLE IF NOT EXISTS `user_types` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `user_types` (
+  `id` int(11) NOT NULL auto_increment,
   `name` varchar(20) NOT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
@@ -114,12 +221,16 @@ INSERT INTO `user_types` (`id`, `name`) VALUES
 --
 
 --
+-- Constraints for table `teachers_subjects`
+--
+ALTER TABLE `teachers_subjects`
+  ADD CONSTRAINT `teachers_subjects_ibfk_1` FOREIGN KEY (`teacher_id`) REFERENCES `teachers` (`id`),
+  ADD CONSTRAINT `teachers_subjects_ibfk_2` FOREIGN KEY (`subject_id`) REFERENCES `users` (`id`),
+  ADD CONSTRAINT `teachers_subjects_ibfk_3` FOREIGN KEY (`day_code_id`) REFERENCES `day_codes` (`id`);
+
+--
 -- Constraints for table `users`
 --
 ALTER TABLE `users`
   ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`user_types_id`) REFERENCES `user_types` (`id`),
   ADD CONSTRAINT `users_ibfk_2` FOREIGN KEY (`departments_id`) REFERENCES `departments` (`id`);
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

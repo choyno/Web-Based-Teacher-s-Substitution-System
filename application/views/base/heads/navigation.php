@@ -7,15 +7,13 @@
 			</li>
 						
 				
-			
-			<li id="navForms" class="nav">
-				<span class="icon-article"></span>
-				<a href="javascript:;">Request Substitution </a>	
-				<ul class="subNav">
-					<li><a href="<?php echo base_url();?>index.php/substitution/request">Teachers Substitution</a></li>					
-					<li><a href="<?php echo base_url();?>index.php/substitution/viewrequesr">View All Request</a></li>					
-				</ul>
+
+			<li id="navpages" class="nav">
+				<span class="icon-document-alt-stroke"></span>
+				<a href="<?php echo base_url();?>index.php/substitution/viewrequest">Request Substitution</a>	
+								
 			</li>
+
 
 			<li id="navpages" class="nav">
 				<span class="icon-document-alt-stroke"></span>
@@ -30,14 +28,9 @@
 			</li>
 			
 
-			<li id="navType" class="nav">
+			<li id="navTables" class="nav">
 				<span class="icon-info"></span>
-				<a href="javascript:;">Teacher's Records</a>	
-				<ul class="subNav">
-					<li><a href="<?php echo base_url();?>index.php/substitution/viewabsent">Absent Teacher's</a></li>
-					<li><a href="<?php echo base_url();?>index.php/substitution/viewsubstitute">Substitute Teacher's</a></li>	
-					<li><a href="<?php echo base_url();?>#">Teacher's Schedule</a></li>				
-				</ul>	
+				<a href="<?php echo base_url();?>index.php/substitution/viewsubstitute"> Substitution Records</a>
 			</li>
 
 

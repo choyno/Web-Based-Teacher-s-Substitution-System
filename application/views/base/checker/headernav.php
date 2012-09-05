@@ -76,38 +76,7 @@
 					</div>
 				</div>
 			</li>
-			<li class="quickNavNotification">
-				<a href="#menuPie" class="menu"><span class="icon-chat"></span></a>
-				
-				<div id="menuPie" class="menu-container">
-					<div class="menu-content cf">					
-						
-						<div class="qnc">
-							
-							<h3>Notifications</h3>
-					
-							<a href="javascript:;" class="qnc_item">
-								<div class="qnc_content">
-									<span class="qnc_title">Notification #1</span>
-									<span class="qnc_preview">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.</span>
-									<span class="qnc_time">3 hours ago</span>
-								</div> <!-- .qnc_content -->
-							</a>
-							
-							<a href="javascript:;" class="qnc_item">
-								<div class="qnc_content">
-									<span class="qnc_title">Notification #2</span>
-									<span class="qnc_preview">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu.</span>
-									<span class="qnc_time">3 hours ago</span>
-								</div> <!-- .qnc_content -->
-							</a>
-							
-							<a href="javascript:;" class="qnc_more">View all Confirmations</a>
-							
-						</div> <!-- .qnc -->
-					</div>
-				</div>				
-			</li>
+				 
 		</ul>		
-	</div> <!-- .quickNav -->
+</div> <!-- .quickNav -->
 	

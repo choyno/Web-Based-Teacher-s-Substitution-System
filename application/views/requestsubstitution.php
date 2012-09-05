@@ -42,9 +42,9 @@
 							<div class="field">
 								<label for="username">Reason :</label>
 								<select id="cardtype" name="cardtype" style="opacity: 0;">
-									<option>Sick Absent</option>
-									<option>Personal</option>
-									<option>Attending school Activity</option>
+									<option>A Sick Day </option>
+									<option>Personal Day</option>
+									<option>Attending School Activity</option>
 
 								</select>
 							</div>
@@ -59,7 +59,7 @@
 							
 						
 						</div>
-						<div class="field-group inlineField" style="width: 48%;float:left;">	
+						<div class="field-group inlineField inlineField2">	
 							
 
 						<div class="field">
@@ -106,7 +106,10 @@
 							<th>5:00</th>
 							<th>MWF</th>
 							<th>
-									<a href="#">Assign</a>
+								<button class="btn btn-small btn-quaternary">
+									<span class="icon-user"></span>
+									Assign
+								</button>
 							</th>
 						</tr>
 						<tr>
@@ -116,7 +119,10 @@
 							<th>3:00</th>
 							<th>TTH</th>
 							<th>
-									<a href="#">Assign</a>
+								<button class="btn btn-small btn-quaternary">
+									<span class="icon-user"></span>
+									Assign
+								</button>
 							</th>
 						</tr>
 				        </tbody>
