@@ -1752,11 +1752,33 @@ body {
 /* ---------------------------------- */
 /* @Striped Table */
 			
-.table-striped tr:nth-child(odd) td { background-color: #FAFAFA; }
+.table-striped tr:nth-child(odd) td {  }
 .table-striped tr:nth-child(even) td { background-color: #FFF; }
 
+.odd 
+{
+	background-color: #FAFAFA;
+}
 
 
+.odd:hover, .even:hover
+{
+	background-color: #c9c2f3;
+}
+
+
+ .adduser
+{
+	margin-bottom: 1.3em;
+	text-align: right;
+
+}
+
+tr th .btn
+{
+	margin:2px;
+
+}
 /* ---------------------------------- */
 /* @Bordered Table */
 		
@@ -3664,7 +3686,6 @@ table.fc-border-separate {
 
 .dataTables_wrapper {
 	position: relative;
-	min-height: 302px;
 	clear: both;
 	_height: 302px;
 	zoom: 1; /* Feeling sorry for IE */
@@ -6547,8 +6568,6 @@ button.ui-button::-moz-focus-inner { border: 0; padding: 0; } /* reset extra pad
 
 	}
 
-	.odd:hover, .even:hover
-	{
-		background-color: #DDD;
 
-	}
+
+
