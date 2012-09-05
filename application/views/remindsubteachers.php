@@ -13,87 +13,59 @@
 					<table class="table table-bordered table-striped data-table">
 						<thead>
 							<tr>
-								<th>Substitute Teacher</th>
+								<th>Date Request</th>
 								<th>Absent Teacher</th>
-								<th>Subject</th>
+								<th>Substitutute Teacher</th>
+								<th>Subject Code</th>
+								<th>Subject Name</th>
 								<th>Room #</th>
-								<th>Request Date</th>
+								<th>Section</th>
+								<th>Type</th>
 								<th>Start Time</th>
 								<th>End Time</th>
+								<th>Schedule</th>
 								<th>Options</th>
 							</tr>
 						</thead>
 				        <tbody>
 							<tr>
-								<th>Roxane B Durano Roxane B Durano</th>
-								<th>Ariel Lopez F.</th>
-								<th>It 704 </th>
-								<th>Room 305</th>
-								<th>8/14/12</th>
-								<th>1:00</th>
-								<th>2:00</th>
+								<th>9/5/12</th>
+								<th>Abayon, Mark Jil C.</th>
+								<th>Edwin, Salanatin C.</th>
+								<th>IT302</th>
+								<th>Software Engineering II: Systems Development & Integration</th>
+								<th>AniLab</th>
+								<th>CI601-C</th>
+								<th>LAB</th>
+								<th>8:00am</th>
+								<th>11:00am</th>
+								<th>TTH</th>
 								<th>
-									<a href="#">Remind</a>
+									<button class="btn btn-small btn-quaternary">
+										<span class="icon-iphone"></span>
+										Remind
+									</button>
 								</th>
 							</tr>
 							<tr>
-								<th>Roxane B Durano Roxane B Durano</th>
-								<th>Ariel Lopez F.</th>
-								<th>It 704 </th>
-								<th>Room 305</th>
-								<th>8/14/12</th>
-								<th>1:00</th>
-								<th>2:00</th>
+								<th>9/5/12</th>
+								<th>Abayon, Mark Jil C.</th>
+								<th>Edwin, Salanatin C.</th>
+								<th>IT302</th>
+								<th>Software Engineering II: Systems Development & Integration</th>
+								<th>AniLab</th>
+								<th>CI601-C</th>
+								<th>LAB</th>
+								<th>8:00am</th>
+								<th>11:00am</th>
+								<th>TTH</th>
 								<th>
-									<a href="#">Remind</a>
+									<button class="btn btn-small btn-quaternary">
+										<span class="icon-iphone"></span>
+										Remind
+									</button>
 								</th>
 							</tr>
-
-							<tr>
-								<th>Roxane B Durano Roxane B Durano</th>
-								<th>Ariel Lopez F.</th>
-								<th>It 704 </th>
-								<th>Room 305</th>
-								<th>8/14/12</th>
-								<th>1:00</th>
-								<th>2:00</th>
-								<th>
-									<a href="#">Remind</a>
-								</th>
-							</tr>
-
-							<tr>
-								<th>Roxane B Durano Roxane B Durano</th>
-								<th>Ariel Lopez F.</th>
-								<th>It 704 </th>
-								<th>Room 305</th>
-								<th>8/14/12</th>
-								<th>1:00</th>
-								<th>2:00</th>
-								<th>
-									<a href="#">Remind</a>
-								</th>
-							</tr>
-
-<tr>
-								<th>Roxane B Durano Roxane B Durano</th>
-								<th>Ariel Lopez F.</th>
-								<th>It 704 </th>
-								<th>Room 305</th>
-								<th>8/14/12</th>
-								<th>1:00</th>
-								<th>2:00</th>
-								<th>
-									<a href="#">Remind</a>
-								</th>
-							</tr>
-
-
-
-						
-
-
-				        </tbody>
 			         </table>
 				</div> <!-- .widget-content -->
 			   </div> <!-- .widget -->

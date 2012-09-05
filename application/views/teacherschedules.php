@@ -31,8 +31,10 @@
 							<tr>
 								<th>Teacher</th>
 								<th>Subject Code</th>
+								<th>Subject Name</th>
 								<th>Room #</th>
 								<th>Section</th>
+								<th>Type</th>
 								<th>Start Time</th>
 								<th>End Time</th>
 								<th>Schedule</th>
@@ -40,203 +42,29 @@
 						</thead>
 				        <tbody>
 						<tr>
-							<th>Kenneth B Barsalote</th>
-							<th>ICN 22</th>
-							<th>Room 302</th>
-							<th>IT704</th>
-							<th>1:00</th>
-							<th>2:00</th>
+							<th>Abayon, Mark Jil C.</th>
+							<th>IT302</th>
+							<th>Software Engineering II: Systems Development & Integration</th>
+							<th>AniLab</th>
+							<th>CI601-C</th>
+							<th>LAB</th>
+							<th>8:00am</th>
+							<th>11:00am</th>
+							<th>TTH</th>
+						</tr>
+
+						<tr>
+							<th>Abayon, Mark Jil C.</th>
+							<th>IT302</th>
+							<th>Software Engineering II: Systems Development & Integration</th>
+							<th>C-803</th>
+							<th>CI601-C</th>
+							<th>LEC</th>
+							<th>7:00am</th>
+							<th>8:00am</th>
 							<th>MWF</th>
 						</tr>
-						<tr>
-							<th>John  B Sable</th>
-							<th>ICN 23</th>
-							<th>Room 305</th>
-							<th>IT703</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>TTH</th>
-						</tr>
-						<tr>
-							<th>Kenneth B Barsalote</th>
-							<th>ICN 22</th>
-							<th>Room 302</th>
-							<th>IT704</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>MWF</th>
-						</tr>
-						<tr>
-							<th>John  B Sable</th>
-							<th>ICN 23</th>
-							<th>Room 305</th>
-							<th>IT703</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>TTH</th>
-						</tr>
-						<tr>
-							<th>John  B Sable</th>
-							<th>ICN 23</th>
-							<th>Room 305</th>
-							<th>IT703</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>TTH</th>
-						</tr>
-						<tr>
-							<th>Kenneth B Barsalote</th>
-							<th>ICN 22</th>
-							<th>Room 302</th>
-							<th>IT704</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>MWF</th>
-						</tr>
-						<tr>
-							<th>John  B Sable</th>
-							<th>ICN 23</th>
-							<th>Room 305</th>
-							<th>IT703</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>TTH</th>
-						</tr>
-						<tr>
-							<th>John  B Sable</th>
-							<th>ICN 23</th>
-							<th>Room 305</th>
-							<th>IT703</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>TTH</th>
-						</tr>
-						<tr>
-							<th>Kenneth B Barsalote</th>
-							<th>ICN 22</th>
-							<th>Room 302</th>
-							<th>IT704</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>MWF</th>
-						</tr>
-						<tr>
-							<th>John  B Sable</th>
-							<th>ICN 23</th>
-							<th>Room 305</th>
-							<th>IT703</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>TTH</th>
-						</tr>
-						<tr>
-							<th>John  B Sable</th>
-							<th>ICN 23</th>
-							<th>Room 305</th>
-							<th>IT703</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>TTH</th>
-						</tr>
-						<tr>
-							<th>Kenneth B Barsalote</th>
-							<th>ICN 22</th>
-							<th>Room 302</th>
-							<th>IT704</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>MWF</th>
-						</tr>
-						<tr>
-							<th>John  B Sable</th>
-							<th>ICN 23</th>
-							<th>Room 305</th>
-							<th>IT703</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>TTH</th>
-						</tr>
-						<tr>
-							<th>John  B Sable</th>
-							<th>ICN 23</th>
-							<th>Room 305</th>
-							<th>IT703</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>TTH</th>
-						</tr>
-						<tr>
-							<th>Kenneth B Barsalote</th>
-							<th>ICN 22</th>
-							<th>Room 302</th>
-							<th>IT704</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>MWF</th>
-						</tr>
-						<tr>
-							<th>John  B Sable</th>
-							<th>ICN 23</th>
-							<th>Room 305</th>
-							<th>IT703</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>TTH</th>
-						</tr>
-						<tr>
-							<th>John  B Sable</th>
-							<th>ICN 23</th>
-							<th>Room 305</th>
-							<th>IT703</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>TTH</th>
-						</tr>
-						<tr>
-							<th>Kenneth B Barsalote</th>
-							<th>ICN 22</th>
-							<th>Room 302</th>
-							<th>IT704</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>MWF</th>
-						</tr>
-						<tr>
-							<th>John  B Sable</th>
-							<th>ICN 23</th>
-							<th>Room 305</th>
-							<th>IT703</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>TTH</th>
-						</tr>
-						<tr>
-							<th>John  B Sable</th>
-							<th>ICN 23</th>
-							<th>Room 305</th>
-							<th>IT703</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>TTH</th>
-						</tr>
-						<tr>
-							<th>Kenneth B Barsalote</th>
-							<th>ICN 22</th>
-							<th>Room 302</th>
-							<th>IT704</th>
-							<th>1:00</th>
-							<th>2:00</th> 
-							<th>MWF</th>
-						</tr>
-						<tr>
-							<th>John  B Sable</th>
-							<th>ICN 23</th>
-							<th>Room 305</th>
-							<th>IT703</th>
-							<th>1:00</th>
-							<th>2:00</th>
-							<th>TTH</th>
-						</tr>										
+														
 				        </tbody>
 			         </table>
 				</div> <!-- .widget-content -->

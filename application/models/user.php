@@ -31,4 +31,10 @@ class User extends CI_Model {
 		$query = $this->db->get_where('users',array('username'=>$username,'password'=>$password,'status'=>'1'));
 		return $query->row();
 	}
+
+	function login_user_types()
+	{		
+		//Checking the user if its on the database
+		
+	}
 }

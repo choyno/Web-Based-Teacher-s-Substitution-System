@@ -4,6 +4,13 @@
 	</div> <!-- #contentHeader -->	
 	<div class="container">
 		<div class="grid-24">
+
+			<div class="adduser">
+				<a href="<?php echo base_url();?>index.php/admincontrol/user">
+					<button class="btn btn-primary btn-blue"><span class="icon-user"></span>Add New User</button>
+				</a>
+			</div>
+
 			<div class="widget widget-table">
 				<div class="widget-header">
 					<span class="icon-list"></span>
@@ -23,64 +30,33 @@
 						</thead>
 				        <tbody>
 							<tr>
-								<th>Roxane B Durano</th>
-								<th>roxken</th>
+								<th>Lomboy, Emmanuel C.</th>
+								<th>LEmmanuel</th>
 								<th>*****</th>
 								<th>CCS</th>
-								<th>Assistant</th>
+								<th>Department Head</th>
 								<th>
-									<a href="#">Edit</a>|
-									<a href="#">Deactive</a>
+									<button class="btn btn-small btn-quaternary">
+										<span class="icon-pen"></span>
+										Edit
+									</button>
+
+
 								</th>
 							</tr>	
 							<tr>
-								<th>Kenneth B Barsalote</th>
-								<th>roxken</th>
+								<th>Semilla, Marivic C.</th>
+								<th>Smarivic</th>
 								<th>*****</th>
 								<th>CCS</th>
-								<th>Department Head
-								</th>
+								<th>Department Head</th>
 								<th>
-									<a href="#">Edit</a>|
-									<a href="#">Deactive</a>
+									<button class="btn btn-small btn-quaternary">
+										<span class="icon-pen"></span>
+										Edit
+									</button>
 								</th>
-							</tr>
-							<tr>
-								<th>Kenneth B Barsalote</th>
-								<th>roxken</th>
-								<th>*****</th>
-								<th>CCS</th>
-								<th>Department Head
-								</th>
-								<th>
-									<a href="#">Edit</a>|
-									<a href="#">Deactive</a>
-								</th>
-							</tr>
-							<tr>
-								<th>Kenneth B Barsalote</th>
-								<th>roxken</th>
-								<th>*****</th>
-								<th>CCS</th>
-								<th>Department Head
-								</th>
-								<th>
-									<a href="#">Edit</a>|
-									<a href="#">Deactive</a>
-								</th>
-							</tr>
-							<tr>
-								<th>Kenneth B Barsalote</th>
-								<th>roxken</th>
-								<th>*****</th>
-								<th>CCS</th>
-								<th>Department Head
-								</th>
-								<th>
-									<a href="#">Edit</a>|
-									<a href="#">Deactive</a>
-								</th>
-							</tr>			
+							</tr>	
 				        </tbody>
 			         </table>
 				</div> <!-- .widget-content -->

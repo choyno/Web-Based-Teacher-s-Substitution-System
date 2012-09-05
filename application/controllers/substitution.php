@@ -24,7 +24,7 @@ class Substitution extends CI_Controller {
 	{
 
 		parent::__construct();
-		$this -> is_logged_in_head();
+		 $this -> is_logged_in_head();
 
 		//calling the model user for the clearing of cache
 		$this -> load-> model('user');

@@ -4,6 +4,13 @@
 	</div> <!-- #contentHeader -->	
 	<div class="container">
 		<div class="grid-24">
+			<div class="adduser">
+				<a href="<?php echo base_url();?>index.php/substitution/request">
+
+					<button class="btn btn-primary btn-blue"><span class="icon-document-alt-fill"></span>Request New Substitution</button>
+				</a>
+			</div>
+
 			<div class="widget widget-table">
 				<div class="widget-header">
 					<span class="icon-list"></span>
@@ -13,97 +20,59 @@
 					<table class="table table-bordered table-striped data-table">
 						<thead>
 							<tr>
-								<th>Substitute Teacher</th>
+								<th>Date Request</th>
 								<th>Absent Teacher</th>
-								<th>Subject</th>
+								<th>Substitutute Teacher</th>
+								<th>Subject Code</th>
+								<th>Subject Name</th>
 								<th>Room #</th>
-								<th>Request Date</th>
+								<th>Section</th>
+								<th>Type</th>
 								<th>Start Time</th>
 								<th>End Time</th>
+								<th>Schedule</th>
 								<th>Options</th>
 							</tr>
 						</thead>
 				        <tbody>
 							<tr>
-								<th>Roxane B Durano Roxane B Durano</th>
-								<th>Ariel Lopez F.</th>
-								<th>It 704 </th>
-								<th>Room 305</th>
-								<th>8/14/12</th>
-								<th>1:00</th>
-								<th>2:00</th>
+								<th>9/5/12</th>
+								<th>Abayon, Mark Jil C.</th>
+								<th>Edwin, Salanatin C.</th>
+								<th>IT302</th>
+								<th>Software Engineering II: Systems Development & Integration</th>
+								<th>AniLab</th>
+								<th>CI601-C</th>
+								<th>LAB</th>
+								<th>8:00am</th>
+								<th>11:00am</th>
+								<th>TTH</th>
 								<th>
-									<a href="#">Edit</a>|
-									<a href="#">Cancel</a>
+									<button class="btn btn-small btn-quaternary">
+										<span class="icon-pen"></span>
+										Edit
+									</button>
 								</th>
 							</tr>	
 							<tr>
-								<th>John B Durano</th>
-								<th>Ariel Lopez F.</th>
-								<th>ICN23 </th>
-								<th>Room 305</th>
-								<th>8/15/12</th>
-								<th>3:00</th>
-								<th>4:00</th>
+								<th>9/15/12</th>
+								<th>Edwin, Salanatin C.</th>
+								<th>Abayon, Mark Jil C.</th>
+								<th>IT302</th>
+								<th>Software Engineering II: Systems Development & Integration</th>
+								<th>C-803</th>
+								<th>CI601-C</th>
+								<th>LEC</th>
+								<th>7:00am</th>
+								<th>8:00am</th>
+								<th>MWF</th>
 								<th>
-									<a href="#">Edit</a>|
-									<a href="#">Cancel</a>
+									<button class="btn btn-small btn-quaternary">
+										<span class="icon-pen"></span>
+										Edit
+									</button>
 								</th>
 							</tr>	
-							<tr>
-								<th>Roxane B Durano Roxane B Durano</th>
-								<th>Ariel Lopez F.</th>
-								<th>It 704 </th>
-								<th>Room 305</th>
-								<th>8/14/12</th>
-								<th>1:00</th>
-								<th>2:00</th>
-								<th>
-									<a href="#">Edit</a>|
-									<a href="#">Cancel</a>
-								</th>
-							</tr>	
-							<tr>
-								<th>John B Durano</th>
-								<th>Ariel Lopez F.</th>
-								<th>ICN23 </th>
-								<th>Room 305</th>
-								<th>8/15/12</th>
-								<th>3:00</th>
-								<th>4:00</th>
-								<th>
-									<a href="#">Edit</a>|
-									<a href="#">Cancel</a>
-								</th>
-							</tr>	
-							<tr>
-								<th>Roxane B Durano Roxane B Durano</th>
-								<th>Ariel Lopez F.</th>
-								<th>It 704 </th>
-								<th>Room 305</th>
-								<th>8/14/12</th>
-								<th>1:00</th>
-								<th>2:00</th>
-								<th>
-									<a href="#">Edit</a>|
-									<a href="#">Cancel</a>
-								</th>
-							</tr>	
-							<tr>
-								<th>John B Durano</th>
-								<th>Ariel Lopez F.</th>
-								<th>ICN23 </th>
-								<th>Room 305</th>
-								<th>8/15/12</th>
-								<th>3:00</th>
-								<th>4:00</th>
-								<th>
-									<a href="#">Edit</a>|
-									<a href="#">Cancel</a>
-								</th>
-							</tr>	
-
-
 				        </tbody>
 			         </table>
 				</div> <!-- .widget-content -->

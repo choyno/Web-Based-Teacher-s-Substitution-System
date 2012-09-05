@@ -1735,7 +1735,7 @@ body {
 	text-align: left;
 
 	color: #333;
-	padding: 10px 10px;
+	padding: 5px;
 	
 	border-bottom: 1px solid #E3E3E3;
 	
@@ -2327,6 +2327,12 @@ div.uploader.disabled span.action {
 div.uploader.disabled span.filename {
   border-color: #ddd;
   color: #aaa;
+}
+
+.inlineField2
+{
+	float:left;
+
 }
 /*
 
