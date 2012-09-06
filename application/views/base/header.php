@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
 
-	<title>Teacher's Substitution Admin -</title>
+	<title>Web based Teacher Substitution System-</title>
 
 	<meta charset="utf-8" />
 	<meta name="description" content="" />

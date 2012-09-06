@@ -14,12 +14,17 @@ class Home extends CI_Controller {
 		{
 			redirect('admincontrol');
 		}
+		else if( $this -> session -> userdata('is_logged_in_head'))
+		{
+			redirect('substitution');
+		}
 		else
 		{
 			$this -> session -> sess_destroy();
 			$this -> load ->view('login');
 
 		}
+
 	}
 }
 

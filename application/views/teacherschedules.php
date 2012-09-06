@@ -23,7 +23,7 @@
 			<div class="widget widget-table">
 				<div class="widget-header">
 					<span class="icon-list"></span>
-					<h3 class="icon chart">Data Table Plugin</h3>		
+					<h3 class="icon chart">Preview</h3>		
 				</div>
 				<div class="widget-content">
 					<table class="table table-bordered table-striped data-table">

@@ -33,15 +33,69 @@ class Account extends CI_Controller
 		//Attempt to login the user using the username and salted password						
 		$user = $this->user->login_user($username,$password );
 		//Check if the user was found
+		
+		// switch ($user->user_types_id) {
+		// 	case 1:
+		// 		# code...
+		// 		break;
+			
+		// 	default:
+		// 		# code...
+		// 		break;
+		// }
+
+
 		if ($user)
 		{
 			//If the user was found then set the session id variable to the user id
-				$data = array(
-					'username' => $this -> input ->post('username'),
-					'is_logged_in_admin' => true,
-					'id'=> $user-> id
-					);
-				$this -> session -> set_userdata($data);
+			
+			switch ($user->user_types_id) {
+				case '1':
+					$data = array(
+						'username' => $this -> input ->post('username'),
+						'is_logged_in_admin' => true,
+						'id'=> $user-> id
+						);
+					$this -> session -> set_userdata($data);
+					break;
+				case '2':
+					$data = array(
+						'username' => $this -> input ->post('username'),
+						'is_logged_in_head' => true,
+						'id'=> $user-> id
+						);
+					$this -> session -> set_userdata($data);
+					break;
+				
+				default:
+					//The user was not found so set a message to this effect
+					$this->form_validation->set_message('_login_user','The account was not found');
+					//Return false, validation failed
+					return FALSE;
+			
+					break;
+			}
+
+
+			// if($user->user_types_id == 1)
+			// {
+			// 	$data = array(
+			// 		'username' => $this -> input ->post('username'),
+			// 		'is_logged_in_admin' => true,
+			// 		'id'=> $user-> id
+			// 		);
+			// 	$this -> session -> set_userdata($data);
+			// }
+			// if($user->user_types_id == 2)
+			// {
+			// 	$data = array(
+			// 		'username' => $this -> input ->post('username'),
+			// 		'is_logged_in_head' => true,
+			// 		'id'=> $user-> id
+			// 		);
+			// 	$this -> session -> set_userdata($data);
+			// }
+	
 		}
 		else
 		{
@@ -80,7 +134,8 @@ class Account extends CI_Controller
         $array = array(
                 'uid'=>'',
                 'usertype'=>'',
-                'is_logged_in_admin'=>FALSE
+                'is_logged_in_admin'=>FALSE,
+                'is_logged_in_head'=>FALSE
         );
         $this->session->unset_userdata($array);
         $this->session->sess_destroy();

@@ -19,10 +19,13 @@ class User extends CI_Model {
 	//protect account for back button to cache
 	public function protect_acct() 
 	{
-	    $is_logged_in = $this->session->userdata('is_logged_in_admin');
-	        if($is_logged_in != TRUE) {
+	    $is_logged_in_admin = $this->session->userdata('is_logged_in_admin');
+	    $is_logged_in_head = $this->session->userdata('is_logged_in_head');
+	        if($is_logged_in_admin != TRUE || $is_logged_in_head != TRUE)
+	         {
 	            redirect(base_url(), 'refresh');    
-	 	} 
+	 		 } 
+	 		
 	}
 
 	function login_user($username,$password)

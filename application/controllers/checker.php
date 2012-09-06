@@ -16,6 +16,24 @@ class Checker extends CI_Controller
 		$data['mainContent'] = 'dashboard';
 		$this-> load -> view('base/checker/template', $data);
 	}
+	public function verifysubstitution()
+	{	
+		$data['mainContent'] ='base/checker/verifyteacher';
+		$this-> load -> view('base/checker/template', $data);
+
+	}
+
+	public function vouchsubstitution()
+	{	
+		$data['mainContent'] = 'base/checker/vouchteacher';
+		$this-> load -> view('base/checker/template', $data);
+	}
+
+	public function generatereports()
+	{
+		$data['mainContent']='base/checker/generatereport';
+		$this-> load -> view ('base/checker/template', $data);
+	}
 
 
 
