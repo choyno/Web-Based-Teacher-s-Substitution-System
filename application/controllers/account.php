@@ -45,57 +45,24 @@ class Account extends CI_Controller
 		// }
 
 
-		if ($user)
+		if ($user && $user->user_types_id === '1')
 		{
-			//If the user was found then set the session id variable to the user id
 			
-			switch ($user->user_types_id) {
-				case '1':
-					$data = array(
+			$data = array(
 						'username' => $this -> input ->post('username'),
 						'is_logged_in_admin' => true,
 						'id'=> $user-> id
 						);
 					$this -> session -> set_userdata($data);
-					break;
-				case '2':
-					$data = array(
+		}
+		elseif ($user && $user->user_types_id === '2')
+		{
+				$data = array(
 						'username' => $this -> input ->post('username'),
 						'is_logged_in_head' => true,
 						'id'=> $user-> id
 						);
 					$this -> session -> set_userdata($data);
-					break;
-				
-				default:
-					//The user was not found so set a message to this effect
-					$this->form_validation->set_message('_login_user','The account was not found');
-					//Return false, validation failed
-					return FALSE;
-			
-					break;
-			}
-
-
-			// if($user->user_types_id == 1)
-			// {
-			// 	$data = array(
-			// 		'username' => $this -> input ->post('username'),
-			// 		'is_logged_in_admin' => true,
-			// 		'id'=> $user-> id
-			// 		);
-			// 	$this -> session -> set_userdata($data);
-			// }
-			// if($user->user_types_id == 2)
-			// {
-			// 	$data = array(
-			// 		'username' => $this -> input ->post('username'),
-			// 		'is_logged_in_head' => true,
-			// 		'id'=> $user-> id
-			// 		);
-			// 	$this -> session -> set_userdata($data);
-			// }
-	
 		}
 		else
 		{

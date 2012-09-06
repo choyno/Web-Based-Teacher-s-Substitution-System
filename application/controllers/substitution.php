@@ -29,7 +29,7 @@ class Substitution extends CI_Controller {
 		//calling the model user for the clearing of cache
 		$this -> load-> model('user');
 		//calling the protect_acct fucntion into the user model
-		$this->user->protect_acct();
+		$this->user->protect_acct_head();
 		
 	}
 	public function index() {

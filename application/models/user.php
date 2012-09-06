@@ -20,8 +20,19 @@ class User extends CI_Model {
 	public function protect_acct() 
 	{
 	    $is_logged_in_admin = $this->session->userdata('is_logged_in_admin');
+	  
+	        if($is_logged_in_admin != TRUE )
+	         {
+	            redirect(base_url(), 'refresh');    
+	 		 } 
+	 		
+	}
+
+	public function protect_acct_head() 
+	{
 	    $is_logged_in_head = $this->session->userdata('is_logged_in_head');
-	        if($is_logged_in_admin != TRUE || $is_logged_in_head != TRUE)
+	  
+	        if($is_logged_in_head != TRUE )
 	         {
 	            redirect(base_url(), 'refresh');    
 	 		 } 
