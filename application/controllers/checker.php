@@ -5,9 +5,9 @@ class Checker extends CI_Controller
 	function __construct()
 	{
 		parent:: __construct();
-		//$this-> is_logged_in_checker();
+		$this-> is_logged_in_checker();
 		$this-> load ->model('user');
-		$this-> user -> protect_acct();
+		$this-> user -> protect_acct_checker();
 
 	}
 
@@ -36,15 +36,14 @@ class Checker extends CI_Controller
 	}
 
 
+	public function is_logged_in_checker()
+	{
+		$is_logged_in_checker = $this-> session -> userdata('is_logged_in_checker');
 
-	// function is_logged_in_checker();
-	// {
-	// 	$is_logged_in_checker = $this-> session -> userdata('is_logged_in_checker');
-
-	// 	if(!isset (is_logged_in_checker) || $is_logged_in_checker != TRUE)
-	// 	{
-	// 		redirect('account/login');
-	// 		die();
-	// 	}
-	//}
+		if(!isset ($is_logged_in_checker) || $is_logged_in_checker != TRUE)
+		{
+			redirect('account/login');
+			die();
+		}
+	}
 }

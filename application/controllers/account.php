@@ -64,6 +64,15 @@ class Account extends CI_Controller
 						);
 					$this -> session -> set_userdata($data);
 		}
+		elseif ($user && $user->user_types_id === '3')
+		{
+				$data = array(
+						'username' => $this -> input ->post('username'),
+						'is_logged_in_checker' => true,
+						'id'=> $user-> id
+						);
+					$this -> session -> set_userdata($data);
+		}
 		else
 		{
 			//The user was not found so set a message to this effect

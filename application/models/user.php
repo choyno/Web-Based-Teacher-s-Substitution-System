@@ -38,6 +38,16 @@ class User extends CI_Model {
 	 		 } 
 	 		
 	}
+	public function protect_acct_checker() 
+	{
+	    $is_logged_in_checker = $this->session->userdata('is_logged_in_checker');
+	  
+	        if($is_logged_in_checker != TRUE )
+	         {
+	            redirect(base_url(), 'refresh');    
+	 		 } 
+	 		
+	}
 
 	function login_user($username,$password)
 	{		

@@ -18,6 +18,10 @@ class Home extends CI_Controller {
 		{
 			redirect('substitution');
 		}
+		else if( $this -> session -> userdata('is_logged_in_checker'))
+		{
+			redirect('checker');
+		}	
 		else
 		{
 			$this -> session -> sess_destroy();
