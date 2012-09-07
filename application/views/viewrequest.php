@@ -52,6 +52,10 @@
 										<span class="icon-pen"></span>
 										Edit
 									</button>
+									<button class="btn btn-small btn-quaternary">
+										<span class="icon-pen"></span>
+										Void
+									</button>
 								</th>
 							</tr>	
 							<tr>
@@ -70,6 +74,10 @@
 									<button class="btn btn-small btn-quaternary">
 										<span class="icon-pen"></span>
 										Edit
+									</button>
+									<button class="btn btn-small btn-quaternary">
+										<span class="icon-pen"></span>
+										Void
 									</button>
 								</th>
 							</tr>	

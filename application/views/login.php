@@ -13,22 +13,23 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<!-- CSS -->
 	<link rel="stylesheet" href="<?php echo base_url();?>stylesheets/all.css" type="text/css" />
-	<link rel="stylesheet" href="<?php echo base_url()?>/stylesheets/reset.css" type="text/css" media="screen" title="no title" />
-	<link rel="stylesheet" href="<?php echo base_url()?>/stylesheets/text.css" type="text/css" media="screen" title="no title" />
-	<link rel="stylesheet" href="<?php echo base_url()?>/stylesheets/buttons.css" type="text/css" media="screen" title="no title" />
-	<link rel="stylesheet" href="<?php echo base_url()?>/stylesheets/theme-default.css" type="text/css" media="screen" title="no title" />
-	<link rel="stylesheet" href="<?php echo base_url()?>/stylesheets/login.css" type="text/css" media="screen" title="no title" />
+	<link rel="stylesheet" href="<?php echo base_url()?>stylesheets/reset.css" type="text/css" media="screen" title="no title" />
+	<link rel="stylesheet" href="<?php echo base_url()?>stylesheets/text.css" type="text/css" media="screen" title="no title" />
+	<link rel="stylesheet" href="<?php echo base_url()?>stylesheets/buttons.css" type="text/css" media="screen" title="no title" />
+	<link rel="stylesheet" href="<?php echo base_url()?>stylesheets/theme-default.css" type="text/css" media="screen" title="no title" />
+	<link rel="stylesheet" href="<?php echo base_url()?>stylesheets/login.css" type="text/css" media="screen" title="no title" />
 	<!-- END CSS -->
 </head>
 
 <body>
 
+<div class="holderfiller">
+<div class="holder">
 <div id="login">
+	
 	<div class=""  style="float:left">
 		<h1>Dashboard</h1>
 	</div>
-	
-
 	<div class=""  style="float:left">
 		<div id="login_panel">
 			<?php if (validation_errors()):?>
@@ -63,8 +64,9 @@
 	
 	
 </div> <!-- #login -->
-
-
+</div>
+<br style="clear:both"/>
+</div>
 <script src="<?php echo base_url()?>/javascripts/all.js"></script>
 </body>
 </html>
