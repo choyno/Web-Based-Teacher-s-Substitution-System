@@ -6,12 +6,12 @@ class User extends CI_Model {
 	{
 		parent::__construct();
 
-		//calling forclearing the cache
+		//calling to clear the cache
 		$this -> __clear_cache();
 		$this->load->helper('date');
 	}
-	//clearing the cache
-	private function __clear_cache()
+	//prevent the page from being private
+	 function __clear_cache()
 	{
 	    $this->output->set_header("Cache-Control: no-store, no-cache, must-revalidate, no-transform, max-age=0, post-check=0, pre-check=0");
 	    $this->output->set_header("Pragma: no-cache");
@@ -56,9 +56,41 @@ class User extends CI_Model {
 		return $query->row();
 	}
 
-	function login_user_types()
+	function get_users()
 	{		
-		//Checking the user if its on the database
+		//retrrieve the user table and pass it to the controller
+
+		// $this-> db -> from('departments');
+		// $query = $this->db->get('users');
+		// $this->db->select('users.*, departments.name as namely');
+		// $this->db->join('users',' users.departments_id = departments.id ');
+		// $query = $this->db->get(' departments');  
+		// return $query ->result();	
+		// return $query2 -> result();	
+
 		
+
+
+		//$this->db->select(' user_types, user_types.name AS name2', TRUE);
+		
+
+		
+		$query = $this->db->get('users');
+		
+    	$this->db->select('users.*, departments.name as namely');
+		$this->db->join('users',' users.departments_id = departments.id ','left');
+		$query = $this->db->get('departments');
+
+		$this->db->join('users',' users.user_types_id = user_types.id ','left');
+		$query = $this->db->get('user_types');
+		
+		// $this->db->join('users', 'users.user_types_id = user_types.id ');
+		// $query2 =$this->db->get('user_types');
+
+	
+		
+		  
+		return $query ->result();	
+		return $query2 -> result();	
 	}
 }

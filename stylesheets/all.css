@@ -1,4 +1,4 @@
-/* ---------------------------------- */
+x/* ---------------------------------- */
 /* @Reset*/
 	
 html, body, div, span, object, iframe,
@@ -368,6 +368,12 @@ body {
 		border-bottom: 1px solid #FFF;
 		position: absolute;
 		bottom: 0;
+	}
+
+	.secondcolumn
+	{
+		width: 53%;float:left;
+		
 	}
 
 

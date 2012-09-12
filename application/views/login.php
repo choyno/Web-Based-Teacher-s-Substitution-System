@@ -44,7 +44,7 @@
 			<div class="login_fields">
 				<div class="field">
 					<label for="username">Username</label>
-					<input type="text"  name="username" value="" id="username" tabindex="1" placeholder="email@example.com" />		
+					<input type="text"  name="username" value="" id="username" tabindex="1" placeholder="username" />		
 				
 				</div>
 				 
@@ -65,7 +65,7 @@
 	
 </div> <!-- #login -->
 </div>
-<br style="clear:both"/>
+<br style="clear:both"/>	
 </div>
 <script src="<?php echo base_url()?>/javascripts/all.js"></script>
 </body>

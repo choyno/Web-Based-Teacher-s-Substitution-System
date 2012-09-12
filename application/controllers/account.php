@@ -47,7 +47,7 @@ class Account extends CI_Controller
 
 		if ($user && $user->user_types_id === '1')
 		{
-			
+			//this will authenticate the admin user
 			$data = array(
 						'username' => $this -> input ->post('username'),
 						'is_logged_in_admin' => true,
@@ -57,6 +57,7 @@ class Account extends CI_Controller
 		}
 		elseif ($user && $user->user_types_id === '2')
 		{
+				//this will authenticate the head user
 				$data = array(
 						'username' => $this -> input ->post('username'),
 						'is_logged_in_head' => true,
@@ -66,6 +67,7 @@ class Account extends CI_Controller
 		}
 		elseif ($user && $user->user_types_id === '3')
 		{
+				//this will authenticate the checker user
 				$data = array(
 						'username' => $this -> input ->post('username'),
 						'is_logged_in_checker' => true,

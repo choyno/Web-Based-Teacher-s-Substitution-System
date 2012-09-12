@@ -50,12 +50,26 @@ class Admincontrol extends CI_Controller {
 
 	public function useraccount()
 	{
+		if($this-> session-> userdata('is_logged_in_admin'))
+		{
+		// this code is use to get all users that is being pass by the get_uses model
+		$this-> load-> model('user');
+		$data['useraccounts'] = $this-> user-> get_users();
 
+		//display he viewusers view file
 		$data['admincontent'] = 'viewusers';
+		//loading the view and passing the data and data2
 		$this -> load -> view ('base/admin/template', $data);
+		}
+		else
+		{
+			//The user id session value does not exist so redirect to the login page
+			redirect('/account/login');
+		}	
 
 	}
 
+	// FUNCTION CODE "SAVE", "UPDATE', "DELETE"..
 
 	public function is_logged_in_admin()
 	{

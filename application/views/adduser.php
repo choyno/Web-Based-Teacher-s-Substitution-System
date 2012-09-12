@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="grid-24">
 			<?php echo validation_errors(); ?>
-			<?php echo form_open('form'); ?>		
+			<?php echo form_open('admincontrol/create'); ?>		
 			<div class="form uniformForm">					
 				<div class="widget">
 					<div class="widget-header">
@@ -34,7 +34,7 @@
 
 						
 						</div>
-						<div class="field-group inlineField" style="width: 48%;float:left;">	
+						<div class="field-group inlineField secondcolumn" style="">	
 							<div class="field">
 								<label for="department">Department :</label>
 								<select name="department " id="department">
@@ -44,8 +44,8 @@
 							</div>
 
 							<div class="field">
-								<label for="fname">User Type :</label>
-								<select name="reason " id="reason">
+								<label for="usertype">User Type :</label>
+								<select name="usertype " id="usertype">
 										<option>--</option>
 											<option>Department Head</option>
 											<option>Checker</option>
@@ -53,8 +53,8 @@
 							</div>
 
 							<div class="field">
-								<label for="fname">Status :</label>
-								<select name="reason " id="reason">
+								<label for="status">Status :</label>
+								<select name="status " id="status">
 										<option>--</option>
 											<option>Active</option>
 											<option>Inactive</option>
