@@ -76,13 +76,16 @@ class User extends CI_Model {
 
 		
 		$query = $this->db->get('users');
-		
-    	$this->db->select('users.*, departments.name as namely');
-		$this->db->join('users',' users.departments_id = departments.id ','left');
-		$query = $this->db->get('departments');
 
-		$this->db->join('users',' users.user_types_id = user_types.id ','left');
-		$query = $this->db->get('user_types');
+
+		//this join is for departments table
+    	$this->db->select('users.*, departments.name as namely');
+		$this->db->join('users',' users.departments_id = departments.id' );
+		$query = $this->db->get('departments' );
+		
+		//this join is for user_types table
+		$this->db->join('users', 'users.user_types_id = user_types.id ');
+		$query2 =$this->db->get('user_types');
 		
 		// $this->db->join('users', 'users.user_types_id = user_types.id ');
 		// $query2 =$this->db->get('user_types');
@@ -90,7 +93,6 @@ class User extends CI_Model {
 	
 		
 		  
-		return $query ->result();	
-		return $query2 -> result();	
+		return $query ->result();
 	}
 }
